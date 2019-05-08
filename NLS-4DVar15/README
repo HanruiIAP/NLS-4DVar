@@ -1,0 +1,7 @@
+This is fortran NLS-4DVar data assimilation program based on Lorenz96 model.
+
+Use makefile to compile and run.
+
+IOFile      : IO file of DA, DA check code and results print code
+
+NLS-4DVar15 : NLS-4DVar assimilation method on Tian and Feng 2015
