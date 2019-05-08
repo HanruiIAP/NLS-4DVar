@@ -14,8 +14,11 @@ subroutine sample(ndim,xx,AA)
   !================================================
   x=xx
   call tinteg_rk4(ktcyc,x,x)
+  bak=xx
   do i=1,nrens
   call tinteg_rk4(ktcyc,x,x)
   AA(:,i)=x
+  x=(x+2*bak)/3.0d0
+  bak=x
   enddo
 end subroutine sample
